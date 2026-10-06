@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101515">
+  <title>Музей Ксюши — частная коллекция</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<main class="museum" id="museum">
+  <header class="masthead">
+    <a class="museum-mark" href="#" aria-label="Музей Ксюши"><span>✳</span> МУЗЕЙ<br>КСЮШИ</a>
+    <div class="collection-meta">ЧАСТНАЯ КОЛЛЕКЦИЯ <i></i> № 001—∞</div>
+    <div class="soundless"><b></b><b></b><b></b> ЗВУК НЕ ТРЕБУЕТСЯ</div>
+  </header>
+
+  <section class="entrance view" id="entrance" aria-labelledby="entrance-title">
+    <div class="entry-halo"></div>
+    <div class="entry-art" aria-hidden="true"><div class="ring outer"></div><div class="ring middle"></div><div class="ring inner"></div><div class="vitrine"><span>✳</span></div><i>✧</i><i>·</i><i>✦</i></div>
+    <div class="entry-copy">
+      <div class="overline"><i></i> ОТДЕЛ ОСОБЫХ ЭКЗЕМПЛЯРОВ · ОСНОВАН ВЧЕРА</div>
+      <h1 id="entrance-title">МУЗЕЙ<br><em>КСЮШИ</em></h1>
+      <p>Частная коллекция.<br>Вход разрешён одному человеку.</p>
+      <button class="enter-button" id="enter-button" type="button"><span>↗</span> ВОЙТИ В МУЗЕЙ</button>
+      <div class="entry-footnote">ТИШИНА В ЗАЛАХ · ЛЮБОВЬ К ЭКСПОНАТУ ДОПУСКАЕТСЯ</div>
+    </div>
+    <div class="entry-coordinates"><span>55° 45′ N</span><span>ОТКРЫТО ДЛЯ КСЮШИ</span><span>37° 37′ E</span></div>
+  </section>
+
+  <section class="gallery view hidden" id="gallery" aria-label="Залы музея">
+    <div class="gallery-topline"><div class="breadcrumb"><span>МУЗЕЙ КСЮШИ</span><b>/</b><span id="hall-name">ЗАЛ I · ПРОИСХОЖДЕНИЕ</span></div><div class="counter"><span id="room-index">01</span><i></i>04</div></div>
+    <div class="gallery-stage">
+      <div class="stage-light"></div>
+      <article class="hall hall-one" id="hall-1" aria-label="Зал I, Происхождение">
+        <div class="hall-heading"><span class="kicker">ЗАЛ ПЕРВИЧНЫХ НАБЛЮДЕНИЙ</span><h2>Происхождение</h2><p>Начало коллекции установить не удалось. Коллекционер говорит: «просто повезло».</p></div>
+        <button class="secret-pin" id="secret-button" type="button" aria-label="Маленькая метка с вопросительным знаком">?</button>
+        <button class="origin-exhibit exhibit-trigger" type="button" data-exhibit="origin" aria-label="Открыть экспонат номер 001 — Ксюша">
+          <span class="origin-glow"></span><span class="plaque">ЭКСПОНАТ №001 <i>ЕДИНСТВЕННЫЙ ЭКЗЕМПЛЯР</i></span>
+          <span class="portrait-frame"><svg viewBox="0 0 220 260" aria-hidden="true"><defs><linearGradient id="dress" x2="1" y2="1"><stop stop-color="#c7a88b"/><stop offset="1" stop-color="#796b69"/></linearGradient><radialGradient id="face"><stop stop-color="#f6dfd0"/><stop offset="1" stop-color="#d4aaa0"/></radialGradient></defs><path d="M48 251c4-55 25-77 62-77s58 22 62 77" fill="url(#dress)"/><path d="M69 104c-6-37 9-74 43-77 38-3 53 29 42 76-3 28-21 52-44 52-22 0-37-21-41-51" fill="url(#face)"/><path d="M66 92c-8-42 16-77 49-79 39-2 59 36 42 76-6-17-13-30-25-38-15 20-36 29-66 27z" fill="#3e3138"/><path d="M79 102c6 4 12 4 18 0m25 0c6 4 12 4 18 0" fill="none" stroke="#59404a" stroke-width="2.6" stroke-linecap="round"/><path d="M101 125c7 8 15 8 22 0" fill="none" stroke="#aa7078" stroke-width="2" stroke-linecap="round"/><circle cx="86" cy="116" r="6" fill="#d9908e" opacity=".32"/><circle cx="139" cy="116" r="6" fill="#d9908e" opacity=".32"/><path d="M91 177l20 25 19-25" fill="#eee0d0" opacity=".78"/></svg><span>K.</span></span>
+          <strong>Ксюша</strong><small>НАЖМИТЕ, ЧТОБЫ ОТКРЫТЬ ЭКСПОНАТ <b>↗</b></small>
+        </button>
+        <div class="origin-facts"><div><span>ДАТА ОБНАРУЖЕНИЯ</span><b>неизвестна</b></div><div><span>РЕДКОСТЬ</span><b>уникальная</b></div><div><span>СОСТОЯНИЕ</span><b>прекрасно сохранилось</b></div></div><div class="side-note">ПОЛЕВОЙ ЖУРНАЛ<br>ЗАПИСЬ 001—А</div>
+      </article>
+
+      <article class="hall hall-two hidden" id="hall-2" aria-label="Зал II, Научный отдел">
+        <div class="hall-heading"><span class="kicker">ЛАБОРАТОРИЯ ПРИКЛАДНОГО ВОСХИЩЕНИЯ</span><h2>Научный отдел</h2><p>Измерения проводились без согласия объекта. Точность — научно убедительная.</p></div>
+        <div class="research-wrap"><div class="research-index"><span>ЛИЧНОЕ ДЕЛО</span><b>К—001</b><span>ВЫБОРКА n=1</span></div><div class="research-list">
+          <div class="measure"><div><span>Уровень очарования</span><b>87<small>%</small></b></div><i style="--value:87%"></i><small>НИЖЕ НОРМЫ <span>НОРМА</span> НЕОБЪЯСНИМО</small></div>
+          <div class="measure"><div><span>Способность улучшать настроение</span><b>96<small>%</small></b></div><i style="--value:96%"></i><small>НЕЙТРАЛЬНО <span>УЖЕ ЛУЧШЕ</span> 96%</small></div>
+          <div class="measure"><div><span>Вероятность сказать «ну ладно»</span><b>14<small>%</small></b></div><i style="--value:14%"></i><small>ВОЗМОЖНО <span>МАЛОВЕРОЯТНО</span> НЕ ОБЕЩАЕМ</small></div>
+          <div class="measure danger"><div><span>Уровень опасности при голоде</span><b class="blocks">████████<em>░░</em></b></div><i style="--value:80%"></i><small>СЫТА <span>НУЖЕН ПЕРЕКУС</span> ЭВАКУАЦИЯ</small></div>
+        </div><div class="lab-stamp">ЗАМЕР<br><b>ДОВОЛЬНО<br>ТОЧНЫЙ</b><small>АЛЕКСЕЙ, 2026</small></div></div><div class="science-foot">* Данные могут слегка зависеть от исследователя.</div>
+      </article>
+
+      <article class="hall hall-three hidden" id="hall-3" aria-label="Зал III, Артефакты">
+        <div class="hall-heading"><span class="kicker">ПРЕДМЕТЫ, ОКАЗАВШИЕСЯ РЯДОМ</span><h2>Артефакты</h2><p>Небольшие вещи. Большое количество косвенных улик.</p></div>
+        <div class="artifact-room">
+          <button class="artifact exhibit-trigger" data-exhibit="coffee" type="button"><span class="num">014</span><span class="object coffee">☕</span><strong>Кофе</strong><small>ТОПЛИВО ДЛЯ ПЛАНОВ</small></button>
+          <button class="artifact exhibit-trigger" data-exhibit="music" type="button"><span class="num">021</span><span class="object music">♫</span><strong>Музыка</strong><small>ПОРТАТИВНАЯ АТМОСФЕРА</small></button>
+          <button class="artifact exhibit-trigger" data-exhibit="book" type="button"><span class="num">033</span><span class="object book">▤</span><strong>Книга</strong><small>УСТРОЙСТВО ДЛЯ ИСЧЕЗНОВЕНИЯ</small></button>
+          <button class="artifact exhibit-trigger" data-exhibit="heart" type="button"><span class="num">047</span><span class="object heart">♥</span><strong>Сердце</strong><small>БЕЗ ОЦЕНОЧНОЙ ШКАЛЫ</small></button>
+        </div><div class="artifact-instruction"><span>ВЫБЕРИТЕ ЭКСПОНАТ</span><i></i><span>ЧТОБЫ УЗНАТЬ ЕГО ИСТОРИЮ</span></div>
+      </article>
+
+      <article class="hall hall-four hidden" id="hall-4" aria-label="Зал IV, Архив наблюдений">
+        <div class="hall-heading"><span class="kicker">ДОСТУП ОГРАНИЧЕН · НО НЕ ОЧЕНЬ</span><h2>Архив наблюдений</h2><p>Записи велись нерегулярно. Некоторые выводы так и не были отправлены.</p></div>
+        <div class="archive">
+          <div class="archive-line"><span class="archive-no">001</span><span class="archive-date">ЗАМЕТКА НА ПОЛЯХ</span><p>Ксюша снова сделала обычный день немного лучше.</p><b>А.</b></div>
+          <div class="archive-line"><span class="archive-no">017</span><span class="archive-date">ПОВТОРНОЕ НАБЛЮДЕНИЕ</span><p>Объект продолжает утверждать, что ничего особенного не произошло.</p><b>А.</b></div>
+          <div class="archive-line personal"><span class="archive-no">042</span><span class="archive-date">ЗАПИСЬ НЕ ДЛЯ ПУБЛИКАЦИИ</span><p>Исследователь Алексей отказался продолжать исследование.<br><em>Сказал, что и так знает, какая она.</em></p><b>А.</b></div>
+        </div><div class="archive-seal">АРХИВ<strong>К—∞</strong>НЕ ЗАКРЫВАТЬ</div>
+      </article>
+
+      <div class="exhibit-detail hidden" id="exhibit-detail" role="dialog" aria-modal="true" aria-labelledby="detail-title"><button class="detail-close" id="detail-close" type="button" aria-label="Закрыть описание">×</button><div class="detail-overline" id="detail-number"></div><h3 id="detail-title"></h3><p id="detail-text"></p><div class="detail-foot">КОЛЛЕКЦИЯ АЛЕКСЕЯ <span>✳</span></div></div>
+    </div>
+    <nav class="gallery-nav" aria-label="Переход между залами"><button id="previous-room" type="button" disabled>← <span>ПРЕДЫДУЩИЙ ЗАЛ</span></button><div class="nav-progress" id="nav-progress"><i class="active"></i><i></i><i></i><i></i></div><button id="next-room" type="button"><span>СЛЕДУЮЩИЙ ЗАЛ</span> →</button></nav>
+    <div class="gallery-footer"><span>ТИШЕ, ЧЕМ ОБЫЧНО</span><span>ЧАСТНАЯ КОЛЛЕКЦИЯ · ВХОД ОДНОМУ ЧЕЛОВЕКУ</span><span>ЛИСТ <b id="footer-page">01</b> / 04</span></div>
+  </section>
+
+  <section class="finale view hidden" id="finale" aria-live="polite"><div class="final-orb">✳</div><div class="final-copy"><div class="overline"><i></i> ПОСЛЕДНЕЕ УВЕДОМЛЕНИЕ</div><h2>МУЗЕЙ<br>ЗАКРЫВАЕТСЯ</h2><div class="final-lines"><p id="final-line-1">Спасибо за посещение.</p><p id="final-line-2">Но один экспонат так и не удалось выставить.</p><p id="final-line-3">Он слишком важен.</p><p id="final-line-4">❤️ Ксюша</p></div><button class="enter-button hidden" id="exit-button" type="button"><span>↗</span> ВЫЙТИ ИЗ МУЗЕЯ</button></div></section>
+  <section class="goodbye view hidden" id="goodbye" aria-live="polite"><div class="goodbye-mark">✳</div><div class="overline">ПОСЕТИТЕЛЬ МОЖЕТ ИДТИ</div><h2>Экскурсия<br><em>окончена.</em></h2><p>Экспонат №∞ остаётся внутри.</p><small>ДВЕРЬ ОСТАВЛЕНА ОТКРЫТОЙ ДЛЯ КСЮШИ</small><button class="quiet-return" id="return-button" type="button">↶ Вернуться ко входу</button></section>
+  <footer class="global-footer"><span>МУЗЕЙ КСЮШИ</span><span>ЭКСПОЗИЦИЯ НЕПОЛНАЯ ПО УВАЖИТЕЛЬНЫМ ПРИЧИНАМ</span><span>∞</span></footer>
+</main>
+<div class="secret-reveal hidden" id="secret-reveal" role="dialog" aria-modal="true" aria-labelledby="secret-heading"><div class="secret-card"><button class="detail-close" id="secret-close" type="button" aria-label="Закрыть секретный экспонат">×</button><div class="secret-orbit">∞</div><div class="detail-overline">ЭКСПОНАТ №∞</div><h2 id="secret-heading">Причина существования музея</h2><p>Алексей однажды понял, что не умеет объяснить, как ему повезло с Ксюшей. Поэтому построил музей. Получилось чуть торжественнее, чем планировалось.</p><div class="detail-foot">ДАРИТЕЛЬ: АЛЕКСЕЙ <span>♥</span></div></div></div>
+</body>
+</html>
